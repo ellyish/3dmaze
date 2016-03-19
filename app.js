@@ -13,7 +13,7 @@
 			
 			
 
-			camera.position.x = 0;
+			camera.position.x = window.innerHeight/5;
 			camera.position.y = window.innerWidth/5;
 			camera.position.z = -10;
 			camera.lookAt(scene.position);
