@@ -1,10 +1,11 @@
 (function(THREE, Maze){
 
 	var app = {}
-	var maze = new Maze(21, 21).getMaze();;
+	var maze = new Maze(21, 21).getMaze();
+	var scene = new THREE.Scene();
 	app.init = function  (){
 
-			var scene = new THREE.Scene();
+			
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
 			var renderer = new THREE.WebGLRenderer();
@@ -64,6 +65,7 @@
 	
 	window.updateMaze = function () {
 		maze = new Maze(21, 21).getMaze();
+		app.drawMaze(21, 21, scene)
 	}
 	
 	
