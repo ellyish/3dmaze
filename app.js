@@ -1,7 +1,7 @@
 (function(THREE, Maze){
 
 	var app = {}
-	var maze;
+	var maze = new Maze(height, width).getMaze();;
 	app.init = function  (){
 
 			var scene = new THREE.Scene();
@@ -40,7 +40,6 @@
 
 	app.drawMaze = function (height, width, scene) {
 		
-		maze = new Maze(height, width).getMaze();
 
 		for (var i = 0; i < height; i++) {
 			for (var j = 0; j < width; j++) {
