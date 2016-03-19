@@ -1,7 +1,7 @@
 (function(THREE, Maze){
 
 	var app = {}
-
+	var maze;
 	app.init = function  (){
 
 			var scene = new THREE.Scene();
@@ -40,7 +40,7 @@
 
 	app.drawMaze = function (height, width, scene) {
 		
-		var maze = new Maze(height, width).getMaze();
+		maze = new Maze(height, width).getMaze();
 
 		for (var i = 0; i < height; i++) {
 			for (var j = 0; j < width; j++) {
@@ -63,5 +63,8 @@
 
 	app.init();
 	
+	document.getElementsByTagName("h2")[0].addEventListener("click", function(){
+		maze = new Maze(height, width).getMaze();
+	})
 
 })(THREE, Maze);
