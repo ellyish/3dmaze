@@ -63,8 +63,10 @@
 
 	app.init();
 	
-	document.getElementsByTagName("h2")[0].addEventListener("click", function(){
+	function updateMaze(){
 		maze = new Maze(height, width).getMaze();
-	})
+	}
+	
+	
 
 })(THREE, Maze);
