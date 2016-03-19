@@ -14,7 +14,7 @@
 			
 
 			camera.position.x = -10;
-			camera.position.y = 10;
+			camera.position.y = 20;
 			camera.position.z = -10;
 			camera.lookAt(scene.position);
 			//controls = new THREE.OrbitControls( camera, renderer.domElement );
