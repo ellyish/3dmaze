@@ -63,7 +63,7 @@
 
 	app.init();
 	
-	function updateMaze(){
+	window.updateMaze = function () {
 		maze = new Maze(height, width).getMaze();
 	}
 	
