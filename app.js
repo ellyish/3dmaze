@@ -60,10 +60,20 @@
 
 	}
 
+	app.clear = function (){
+		var obj, i;
+		for ( i = scene.children.length - 1; i >= 0 ; i -- ) {
+		    obj = scene.children[ i ];
+		    scene.remove(obj);
+		    
+		}
+
+	}
 
 	app.init();
 	
 	window.updateMaze = function () {
+		app.clear()
 		maze = new Maze(21, 21).getMaze();
 		app.drawMaze(21, 21, scene)
 	}
