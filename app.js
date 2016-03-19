@@ -13,7 +13,7 @@
 			
 			
 
-			camera.position.x = 0;
+			camera.position.x = 10;
 			camera.position.y = 20;
 			camera.position.z = -10;
 			camera.lookAt(scene.position);
